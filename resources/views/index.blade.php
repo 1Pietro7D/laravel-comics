@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <script src="{{ asset('js/app.js') }}"></script>
+    {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script src="{{ asset('js/app.js') }}"></script> --}}
     <title>Primi passi con laravel</title>
 </head>
 
@@ -14,9 +14,9 @@
 @include('css-prov')
 
 <body>
-    @include('header')
-    @include('main')
-    @include('footer')
+    @include('partials.header')
+    @include('partials.main')
+    @include('partials.footer')
 </body>
 
 </html>
