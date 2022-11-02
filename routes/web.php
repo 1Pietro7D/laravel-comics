@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $navigation = config('data.navigation');
+    $data = [ "links" => $navigation['header-nav']];
+
+    return view('home', $data);
 });
+
+// Route::get('/navHeader', function () {
+//     $navHeaderItems = config('data.navigation');
+//     $dataHeader =  $navHeaderItems['header-nav'];
+//     return view('navHeader', $dataHeader);
+// });
+?>
